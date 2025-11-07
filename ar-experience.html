@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="晴川·映江梦 AR 体验流程 - 从扫码到沉浸的完整交互路径">
+    <title>AR 体验流程 | 晴川·映江梦</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">晴川·映江梦</span>
+            </a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="ar-experience.html">AR 体验</a></li>
+                <li><a href="visual-style.html">视觉风格</a></li>
+                <li><a href="landmarks.html">地标场景</a></li>
+                <li><a href="characters.html">角色 IP</a></li>
+                <li><a href="storyboard.html">剧情分镜</a></li>
+                <li><a href="assets.html">延展物料</a></li>
+            </ul>
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="gradient-text-blue">AR 体验流程</h1>
+            <p class="subtitle">从扫码进入到多场景探索，完整的沉浸式文化之旅</p>
+        </div>
+    </section>
+
+    <!-- 体验流程时间轴 -->
+    <section class="container" style="padding: 3rem 2rem 5rem;">
+        <div class="timeline">
+            <!-- 步骤 1：扫码进入 -->
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-content">
+                    <div class="card">
+                        <span class="badge" style="background: rgba(212,175,55,0.2);">步骤 01</span>
+                        <h3 class="gradient-text" style="margin-top: 1rem;">扫码进入 · 映江之门</h3>
+                        <p style="margin: 1.5rem 0; line-height: 1.8; color: var(--text-secondary);">
+                            游客抵达晴川阁景区，在导视牌或入口处看到精美的二维码标识。轻轻一扫，无需下载 APP，
+                            直接通过浏览器进入《晴川·映江梦》AR 体验应用，开启一场跨越千年的文化对话。
+                        </p>
+                        <div class="tag-cloud">
+                            <span class="tag">无需下载</span>
+                            <span class="tag">即扫即用</span>
+                            <span class="tag">快速启动</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-visual">
+                    <div class="card" style="background: linear-gradient(135deg, rgba(26,58,90,0.4), rgba(15,20,25,0.6)); min-height: 300px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                        <!-- 二维码示意 -->
+                        <div style="width: 150px; height: 150px; background: rgba(255,255,255,0.95); border-radius: 1rem; padding: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.3);">
+                            <div style="width: 100%; height: 100%; background: linear-gradient(45deg, #1A3A5A 25%, transparent 25%, transparent 75%, #1A3A5A 75%), linear-gradient(45deg, #1A3A5A 25%, transparent 25%, transparent 75%, #1A3A5A 75%); background-size: 20px 20px; background-position: 0 0, 10px 10px; opacity: 0.8;"></div>
+                        </div>
+                        <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); padding: 10px 20px; background: rgba(212,175,55,0.9); border-radius: 20px; color: #0F1419; font-weight: 600; font-size: 14px;">
+                            扫码开启映江梦
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <!-- 步骤 2：实景识别 -->
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-content">
+                    <div class="card">
+                        <span class="badge" style="background: rgba(91,155,213,0.2); border-color: #5B9BD5; color: #5B9BD5;">步骤 02</span>
+                        <h3 class="gradient-text-blue" style="margin-top: 1rem;">抬手即见 · 晴川浮现</h3>
+                        <p style="margin: 1.5rem 0; line-height: 1.8; color: var(--text-secondary);">
+                            打开手机相机，对准眼前的晴川阁建筑。AI 视觉识别技术毫秒级响应，自动锁定建筑轮廓，
+                            屏幕上瞬间叠加出"晴川历历汉阳树"的诗句光效，仿佛崔颢的千古名篇在此刻重新吟唱。
+                        </p>
+                        <div class="tag-cloud">
+                            <span class="tag">AI 识别</span>
+                            <span class="tag">实时叠加</span>
+                            <span class="tag">诗句光效</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-visual">
+                    <div class="card" style="background: linear-gradient(135deg, rgba(26,58,90,0.4), rgba(30,89,72,0.4)); min-height: 300px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                        <!-- 识别界面 -->
+                        <div style="position: relative; width: 200px; height: 200px;">
+                            <!-- 扫描框 -->
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 150px; height: 150px; border: 3px solid #5B9BD5; border-radius: 15px; box-shadow: 0 0 40px rgba(91,155,213,0.6); animation: pulse 2s ease-in-out infinite;">
+                                <!-- 四个角装饰 -->
+                                <div style="position: absolute; top: -3px; left: -3px; width: 30px; height: 30px; border-top: 4px solid #D4AF37; border-left: 4px solid #D4AF37; border-radius: 5px 0 0 0;"></div>
+                                <div style="position: absolute; top: -3px; right: -3px; width: 30px; height: 30px; border-top: 4px solid #D4AF37; border-right: 4px solid #D4AF37; border-radius: 0 5px 0 0;"></div>
+                                <div style="position: absolute; bottom: -3px; left: -3px; width: 30px; height: 30px; border-bottom: 4px solid #D4AF37; border-left: 4px solid #D4AF37; border-radius: 0 0 0 5px;"></div>
+                                <div style="position: absolute; bottom: -3px; right: -3px; width: 30px; height: 30px; border-bottom: 4px solid #D4AF37; border-right: 4px solid #D4AF37; border-radius: 0 0 5px 0;"></div>
+                            </div>
+                            <!-- 建筑轮廓 -->
+                            <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); width: 100px; height: 70px; border: 2px solid rgba(212,175,55,0.6); border-radius: 8px 8px 0 0;">
+                                <div style="position: absolute; top: -25px; left: -10px; right: -10px; height: 25px; border: 2px solid rgba(212,175,55,0.4); border-bottom: none; clip-path: polygon(0 100%, 20% 0, 80% 0, 100% 100%);"></div>
+                            </div>
+                        </div>
+                        <div style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); padding: 8px 20px; background: rgba(91,155,213,0.3); border: 1px solid #5B9BD5; border-radius: 20px; font-size: 13px; color: #E5E7EB; white-space: nowrap;">
+                            ● 晴川阁 · 识别中...
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <!-- 步骤 3：诗词浮现 -->
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-content">
+                    <div class="card">
+                        <span class="badge" style="background: rgba(212,175,55,0.2);">步骤 03</span>
+                        <h3 class="gradient-text" style="margin-top: 1rem;">诗意叠加 · 光影流转</h3>
+                        <p style="margin: 1.5rem 0; line-height: 1.8; color: var(--text-secondary);">
+                            识别成功后，诗句以柔美的光效渐次浮现，每一个字都带着淡金色的光晕，在建筑上空缓缓飘动。
+                            点击诗句，可展开详细注释、诗人背景和创作故事，让文化不再是冰冷的文字，而是可以"触摸"的历史。
+                        </p>
+                        <div class="tag-cloud">
+                            <span class="tag">诗词注释</span>
+                            <span class="tag">诗人故事</span>
+                            <span class="tag">互动体验</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-visual">
+                    <div class="card poem-container" style="background: linear-gradient(135deg, rgba(26,58,90,0.5), rgba(30,89,72,0.3)); min-height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; position: relative; overflow: hidden;">
+                        <div class="poem-line" style="font-size: 24px; color: #D4AF37; text-shadow: 0 0 30px rgba(212,175,55,0.9); letter-spacing: 8px; font-family: var(--font-heading);">
+                            晴川历历汉阳树
+                        </div>
+                        <div class="poem-line" style="font-size: 24px; color: #D4AF37; text-shadow: 0 0 30px rgba(212,175,55,0.9); letter-spacing: 8px; font-family: var(--font-heading);">
+                            芳草萋萋鹦鹉洲
+                        </div>
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 50% 50%, rgba(212,175,55,0.1), transparent 60%); pointer-events: none;"></div>
+                    </div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <!-- 步骤 4：场景切换 -->
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-content">
+                    <div class="card">
+                        <span class="badge" style="background: rgba(30,89,72,0.2); border-color: #1E5948; color: #7dd3fc;">步骤 04</span>
+                        <h3 class="gradient-text-blue" style="margin-top: 1rem;">多场景切换 · 文化漫游</h3>
+                        <p style="margin: 1.5rem 0; line-height: 1.8; color: var(--text-secondary);">
+                            底部出现场景切换按钮，游客可选择"长江夜景""大禹治水""诗人朗诵"等多个 AR 场景。
+                            每个场景都有独特的视觉风格和文化内容，从不同维度讲述晴川阁与武汉的历史故事。
+                        </p>
+                        <div class="tag-cloud">
+                            <span class="tag">多场景</span>
+                            <span class="tag">自由切换</span>
+                            <span class="tag">深度探索</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-visual">
+                    <div class="card" style="background: linear-gradient(135deg, rgba(30,89,72,0.4), rgba(26,58,90,0.4)); min-height: 300px; padding: 2rem;">
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+                            <div style="padding: 1.5rem; background: rgba(26,58,90,0.5); border: 2px solid rgba(91,155,213,0.4); border-radius: 1rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                                <div style="width: 50px; height: 50px; margin: 0 auto 10px; background: linear-gradient(135deg, #1A3A5A, #2A4A6A); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px;">🏛️</div>
+                                <div style="font-size: 14px; color: #E5E7EB; font-weight: 500;">晴川主阁</div>
+                            </div>
+                            <div style="padding: 1.5rem; background: rgba(30,89,72,0.5); border: 2px solid rgba(212,175,55,0.4); border-radius: 1rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                                <div style="width: 50px; height: 50px; margin: 0 auto 10px; background: linear-gradient(135deg, #1E5948, #2E6958); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px;">🌊</div>
+                                <div style="font-size: 14px; color: #E5E7EB; font-weight: 500;">长江夜景</div>
+                            </div>
+                            <div style="padding: 1.5rem; background: rgba(140,59,50,0.4); border: 2px solid rgba(212,175,55,0.4); border-radius: 1rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                                <div style="width: 50px; height: 50px; margin: 0 auto 10px; background: linear-gradient(135deg, #8C3B32, #9C4B42); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px;">⛰️</div>
+                                <div style="font-size: 14px; color: #E5E7EB; font-weight: 500;">大禹治水</div>
+                            </div>
+                            <div style="padding: 1.5rem; background: rgba(26,58,90,0.5); border: 2px solid rgba(91,155,213,0.4); border-radius: 1rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                                <div style="width: 50px; height: 50px; margin: 0 auto 10px; background: linear-gradient(135deg, #1A3A5A, #1E5948); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px;">📜</div>
+                                <div style="font-size: 14px; color: #E5E7EB; font-weight: 500;">诗人故事</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <!-- 步骤 5：互动探索 -->
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-content">
+                    <div class="card">
+                        <span class="badge" style="background: rgba(212,175,55,0.2);">步骤 05</span>
+                        <h3 class="gradient-text" style="margin-top: 1rem;">互动探索 · 知识获取</h3>
+                        <p style="margin: 1.5rem 0; line-height: 1.8; color: var(--text-secondary);">
+                            在 AR 场景中，游客可以点击感兴趣的元素，获取更多文化知识。例如点击建筑的某个构件，
+                            了解其建筑工艺；点击历史人物，观看相关故事动画。每次互动都是一次文化的深度体验。
+                        </p>
+                        <div class="tag-cloud">
+                            <span class="tag">点击交互</span>
+                            <span class="tag">知识卡片</span>
+                            <span class="tag">动画演示</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-visual">
+                    <div class="card" style="background: linear-gradient(135deg, rgba(26,58,90,0.4), rgba(30,89,72,0.4)); min-height: 300px; display: flex; align-items: center; justify-content: center; position: relative;">
+                        <div style="position: relative; width: 80%; height: 80%;">
+                            <!-- 互动热点 -->
+                            <div style="position: absolute; top: 20%; left: 30%; width: 30px; height: 30px; background: radial-gradient(circle, rgba(212,175,55,0.8), transparent); border-radius: 50%; animation: breathe 2s ease-in-out infinite;">
+                                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 12px; height: 12px; background: #D4AF37; border-radius: 50%; box-shadow: 0 0 15px #D4AF37;"></div>
+                            </div>
+                            <div style="position: absolute; top: 50%; right: 25%; width: 30px; height: 30px; background: radial-gradient(circle, rgba(91,155,213,0.8), transparent); border-radius: 50%; animation: breathe 2s ease-in-out infinite; animation-delay: 0.5s;">
+                                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 12px; height: 12px; background: #5B9BD5; border-radius: 50%; box-shadow: 0 0 15px #5B9BD5;"></div>
+                            </div>
+                            <div style="position: absolute; bottom: 30%; left: 45%; width: 30px; height: 30px; background: radial-gradient(circle, rgba(30,89,72,0.8), transparent); border-radius: 50%; animation: breathe 2s ease-in-out infinite; animation-delay: 1s;">
+                                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 12px; height: 12px; background: #1E5948; border-radius: 50%; box-shadow: 0 0 15px #1E5948;"></div>
+                            </div>
+                            <!-- 提示文字 -->
+                            <div style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); padding: 10px 20px; background: rgba(15,20,25,0.9); border: 1px solid rgba(212,175,55,0.5); border-radius: 20px; font-size: 13px; color: #D4AF37; white-space: nowrap;">
+                                点击发光点探索更多内容
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <!-- 步骤 6：分享留念 -->
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-content">
+                    <div class="card">
+                        <span class="badge" style="background: rgba(140,59,50,0.2); border-color: #8C3B32; color: #fca5a5;">步骤 06</span>
+                        <h3 class="gradient-text" style="margin-top: 1rem;">记录分享 · 传播文化</h3>
+                        <p style="margin: 1.5rem 0; line-height: 1.8; color: var(--text-secondary);">
+                            体验完成后，系统自动生成精美的 AR 截图，加上"晴川·映江梦"水印和诗句，
+                            游客可一键分享到社交平台，成为武汉文化的传播者，让更多人了解晴川阁的魅力。
+                        </p>
+                        <div class="tag-cloud">
+                            <span class="tag">截图保存</span>
+                            <span class="tag">社交分享</span>
+                            <span class="tag">文化传播</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-visual">
+                    <div class="card" style="background: linear-gradient(135deg, rgba(140,59,50,0.3), rgba(26,58,90,0.4)); min-height: 300px; display: flex; align-items: center; justify-content: center; padding: 2rem;">
+                        <div style="width: 100%; max-width: 300px; background: rgba(255,255,255,0.05); border: 1px solid rgba(212,175,55,0.3); border-radius: 1rem; padding: 1.5rem;">
+                            <div style="width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, rgba(26,58,90,0.6), rgba(30,89,72,0.6)); border-radius: 0.5rem; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                                📸
+                            </div>
+                            <div style="text-align: center; margin-bottom: 1rem;">
+                                <div style="font-size: 14px; color: #D4AF37; margin-bottom: 0.5rem; font-family: var(--font-heading);">晴川·映江梦</div>
+                                <div style="font-size: 12px; color: var(--text-muted);">我在晴川阁遇见了千年诗意</div>
+                            </div>
+                            <div style="display: flex; gap: 0.5rem; justify-content: center;">
+                                <div style="width: 40px; height: 40px; background: rgba(26,58,90,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; cursor: pointer;">💬</div>
+                                <div style="width: 40px; height: 40px; background: rgba(30,89,72,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; cursor: pointer;">📤</div>
+                                <div style="width: 40px; height: 40px; background: rgba(140,59,50,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; cursor: pointer;">💾</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术特色 -->
+    <section class="container" style="padding: 5rem 2rem;">
+        <div class="section-title scroll-reveal">
+            <h2 class="gradient-text-blue">技术实现亮点</h2>
+            <p>先进的技术方案保障流畅的用户体验</p>
+        </div>
+        
+        <div class="grid grid-3">
+            <div class="card scroll-reveal">
+                <h3 class="gradient-text">AI 视觉识别</h3>
+                <p style="margin: 1rem 0; line-height: 1.8; color: var(--text-secondary);">
+                    采用深度学习模型，精准识别晴川阁建筑特征，识别准确率达 95% 以上，响应时间小于 200ms。
+                </p>
+            </div>
+            <div class="card scroll-reveal">
+                <h3 class="gradient-text">WebAR 技术</h3>
+                <p style="margin: 1rem 0; line-height: 1.8; color: var(--text-secondary);">
+                    基于 WebXR 标准，无需下载 APP，跨平台兼容，降低用户使用门槛，提升转化率。
+                </p>
+            </div>
+            <div class="card scroll-reveal">
+                <h3 class="gradient-text">实时渲染引擎</h3>
+                <p style="margin: 1rem 0; line-height: 1.8; color: var(--text-secondary);">
+                    自研 AR 内容渲染引擎，支持粒子效果、光影动画、3D 模型等多种表现形式。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="footer-logo-icon"></div>
+                <span class="footer-title">晴川·映江梦</span>
+            </div>
+            <p class="footer-description">
+                以 AR 科技唤醒千年文化，让晴川阁的诗意在长江之畔重新绽放
+            </p>
+            <div class="footer-links">
+                <a href="index.html">首页</a>
+                <a href="ar-experience.html">AR 体验</a>
+                <a href="visual-style.html">视觉风格</a>
+                <a href="landmarks.html">地标场景</a>
+                <a href="characters.html">角色 IP</a>
+                <a href="storyboard.html">剧情分镜</a>
+                <a href="assets.html">延展物料</a>
+            </div>
+            <p class="footer-copyright">
+                © 2025 晴川·映江梦项目 | 武汉晴川阁文化 AR 体验
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    
+    <style>
+        @keyframes breathe {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.3); opacity: 0.7; }
+        }
+    </style>
+</body>
+</html>
+

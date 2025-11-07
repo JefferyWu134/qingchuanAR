@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="晴川·映江梦 - 武汉晴川阁沉浸式诗意 AR 体验项目">
+    <title>晴川·映江梦 | 武汉晴川阁沉浸式诗意 AR 体验</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">晴川·映江梦</span>
+            </a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="ar-experience.html">AR 体验</a></li>
+                <li><a href="visual-style.html">视觉风格</a></li>
+                <li><a href="landmarks.html">地标场景</a></li>
+                <li><a href="characters.html">角色 IP</a></li>
+                <li><a href="storyboard.html">剧情分镜</a></li>
+                <li><a href="assets.html">延展物料</a></li>
+            </ul>
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <svg viewBox="0 0 1400 800" xmlns="http://www.w3.org/2000/svg">
+                <!-- 晴川阁轮廓剪影 -->
+                <defs>
+                    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#1A3A5A;stop-opacity:0.3" />
+                        <stop offset="100%" style="stop-color:#1E5948;stop-opacity:0.5" />
+                    </linearGradient>
+                    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#0A2A4A;stop-opacity:0.8" />
+                        <stop offset="100%" style="stop-color:#1A3A5A;stop-opacity:0.3" />
+                    </linearGradient>
+                </defs>
+                
+                <!-- 天空背景 -->
+                <rect width="1400" height="800" fill="url(#skyGradient)"/>
+                
+                <!-- 水面 -->
+                <path d="M 0 600 Q 350 580 700 600 T 1400 600 L 1400 800 L 0 800 Z" 
+                      fill="rgba(26,58,90,0.3)" opacity="0.6"/>
+                
+                <!-- 建筑主体 -->
+                <rect x="550" y="400" width="300" height="200" fill="url(#buildingGradient)"/>
+                
+                <!-- 屋顶 -->
+                <path d="M 520 400 L 700 320 L 880 400 Z" fill="rgba(140,59,50,0.4)"/>
+                <path d="M 540 350 L 700 280 L 860 350 Z" fill="rgba(140,59,50,0.5)"/>
+                
+                <!-- 装饰性诗句光线 -->
+                <text x="200" y="250" font-size="18" fill="rgba(212,175,55,0.4)" 
+                      font-family="serif" letter-spacing="5">晴川历历汉阳树</text>
+                <text x="900" y="350" font-size="18" fill="rgba(212,175,55,0.3)" 
+                      font-family="serif" letter-spacing="5">芳草萋萋鹦鹉洲</text>
+            </svg>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text scroll-reveal">
+                    <h1 class="gradient-text">在江水与诗句之间<br>唤醒晴川阁的映江之梦</h1>
+                    <p class="subtitle">
+                        《晴川·映江梦》将AR技术与千年文化底蕴深度融合，让游客在晴川阁前抬手即见诗句浮空、历史重现，
+                        用科技之光点亮诗意江城，打造武汉文旅新地标体验。
+                    </p>
+                    <div class="hero-features">
+                        <span class="badge">实景 AR 识别</span>
+                        <span class="badge">诗词光效叠加</span>
+                        <span class="badge">多场景文化漫游</span>
+                        <span class="badge">智能数据运营</span>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="ar-experience.html" class="btn btn-primary">探索 AR 体验</a>
+                        <a href="visual-style.html" class="btn btn-secondary">查看视觉设计</a>
+                    </div>
+                </div>
+                
+                <!-- 手机 Mockup -->
+                <div class="phone-mockup scroll-reveal">
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <div style="width: 100%; height: 100%; display: flex; flex-direction: column; padding: 60px 20px 20px; position: relative;">
+                                <!-- AR 界面内容 -->
+                                <div class="poem-container" style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 30px; position: relative; z-index: 2;">
+                                    <div class="poem-line" style="font-size: 18px; color: #D4AF37; text-shadow: 0 0 20px rgba(212,175,55,0.8); letter-spacing: 4px; font-family: serif;">
+                                        晴川历历汉阳树
+                                    </div>
+                                    <div class="poem-line" style="font-size: 18px; color: #D4AF37; text-shadow: 0 0 20px rgba(212,175,55,0.8); letter-spacing: 4px; font-family: serif;">
+                                        芳草萋萋鹦鹉洲
+                                    </div>
+                                </div>
+                                
+                                <!-- 建筑识别框 -->
+                                <div style="position: absolute; bottom: 35%; left: 50%; transform: translateX(-50%); width: 120px; height: 80px; border: 2px solid rgba(91,155,213,0.6); border-radius: 10px; box-shadow: 0 0 30px rgba(91,155,213,0.4);"></div>
+                                
+                                <!-- 状态标识 -->
+                                <div style="position: absolute; top: 70px; left: 20px; padding: 8px 15px; background: rgba(26,58,90,0.8); border: 1px solid rgba(91,155,213,0.5); border-radius: 20px; font-size: 12px; color: #5B9BD5;">
+                                    ● 晴川阁 · 已识别
+                                </div>
+                                
+                                <!-- 底部操作按钮 -->
+                                <div style="position: absolute; bottom: 20px; left: 20px; right: 20px; display: flex; flex-direction: column; gap: 10px;">
+                                    <div style="padding: 12px; background: linear-gradient(135deg, rgba(26,58,90,0.6), rgba(30,89,72,0.6)); border: 1px solid rgba(91,155,213,0.5); border-radius: 10px; text-align: center; font-size: 13px; color: #E5E7EB;">
+                                        进入映江梦体验
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心模块导航 -->
+    <section class="container" style="padding: 5rem 2rem;">
+        <div class="section-title scroll-reveal">
+            <h2 class="gradient-text-blue">项目核心模块</h2>
+            <p>从概念到落地，完整的文化科技融合方案</p>
+        </div>
+        
+        <div class="grid grid-3">
+            <!-- AR 体验模块 -->
+            <div class="card scroll-reveal">
+                <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #1A3A5A, #2A4A6A); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(26,58,90,0.4);">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4L4 8L12 12L20 8L12 4Z" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 12L12 16L20 12" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 16L12 20L20 16" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 style="text-align: center; color: #D4AF37; margin-bottom: 1rem;">AR 体验流程</h3>
+                <p style="text-align: center; color: var(--text-secondary); line-height: 1.8;">
+                    从扫码进入到多场景探索，完整的AR交互路径设计，让文化体验触手可及。
+                </p>
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <a href="ar-experience.html" class="btn btn-secondary" style="display: inline-block;">查看详情</a>
+                </div>
+            </div>
+            
+            <!-- 视觉风格模块 -->
+            <div class="card scroll-reveal">
+                <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #1E5948, #2E6958); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(30,89,72,0.4);">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="3" stroke="#D4AF37" stroke-width="2"/>
+                        <path d="M12 1V3M12 21V23M23 12H21M3 12H1M19.07 4.93L17.66 6.34M6.34 17.66L4.93 19.07M19.07 19.07L17.66 17.66M6.34 6.34L4.93 4.93" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 style="text-align: center; color: #D4AF37; margin-bottom: 1rem;">视觉风格体系</h3>
+                <p style="text-align: center; color: var(--text-secondary); line-height: 1.8;">
+                    东方诗意与现代科技的完美融合，低饱和高级配色，构建独特品牌识别。
+                </p>
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <a href="visual-style.html" class="btn btn-secondary" style="display: inline-block;">查看详情</a>
+                </div>
+            </div>
+            
+            <!-- 地标场景模块 -->
+            <div class="card scroll-reveal">
+                <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #8C3B32, #9C4B42); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(140,59,50,0.4);">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 7L12 12M12 12L22 7M12 12V22" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 style="text-align: center; color: #D4AF37; margin-bottom: 1rem;">多地标场景</h3>
+                <p style="text-align: center; color: var(--text-secondary); line-height: 1.8;">
+                    晴川主阁、江景复原、大禹治水、诗人故事，多维度展现武汉历史文化。
+                </p>
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <a href="landmarks.html" class="btn btn-secondary" style="display: inline-block;">查看详情</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目特色 -->
+    <section class="container" style="padding: 5rem 2rem;">
+        <div class="section-title scroll-reveal">
+            <h2 class="gradient-text-blue">为什么选择晴川·映江梦</h2>
+            <p>技术创新与文化传承的深度融合</p>
+        </div>
+        
+        <div class="grid grid-2" style="gap: 3rem; align-items: start;">
+            <div class="scroll-reveal">
+                <div class="card" style="height: 100%;">
+                    <h3 class="gradient-text" style="margin-bottom: 2rem;">技术创新</h3>
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div style="padding-left: 1rem; border-left: 3px solid var(--gold);">
+                            <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">实景 AI 识别</h4>
+                            <p style="color: var(--text-secondary);">基于深度学习的建筑识别技术，毫秒级响应，精准定位文化场景。</p>
+                        </div>
+                        <div style="padding-left: 1rem; border-left: 3px solid var(--gold);">
+                            <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">AR 内容引擎</h4>
+                            <p style="color: var(--text-secondary);">自研 AR 渲染引擎，支持诗词动效、历史场景重现等多样化内容。</p>
+                        </div>
+                        <div style="padding-left: 1rem; border-left: 3px solid var(--gold);">
+                            <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">数据智能分析</h4>
+                            <p style="color: var(--text-secondary);">实时采集游客行为数据，智能优化内容推荐和场景导览。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-reveal">
+                <div class="card" style="height: 100%;">
+                    <h3 class="gradient-text" style="margin-bottom: 2rem;">文化价值</h3>
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div style="padding-left: 1rem; border-left: 3px solid var(--primary-blue-light);">
+                            <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">诗词文化传承</h4>
+                            <p style="color: var(--text-secondary);">以 AR 形式让古诗词"活"起来，新一代年轻人喜爱的文化传播方式。</p>
+                        </div>
+                        <div style="padding-left: 1rem; border-left: 3px solid var(--primary-blue-light);">
+                            <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">历史场景重现</h4>
+                            <p style="color: var(--text-secondary);">结合历史考证，在原址重现大禹治水、崔颢登楼等经典文化场景。</p>
+                        </div>
+                        <div style="padding-left: 1rem; border-left: 3px solid var(--primary-blue-light);">
+                            <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">武汉城市名片</h4>
+                            <p style="color: var(--text-secondary);">打造武汉文旅新 IP，提升城市文化软实力和旅游吸引力。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 区域 -->
+    <section class="container" style="padding: 5rem 2rem;">
+        <div class="card scroll-reveal" style="text-align: center; background: linear-gradient(135deg, rgba(26,58,90,0.5), rgba(30,89,72,0.4)); padding: 4rem 2rem;">
+            <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 1.5rem;">准备好开启映江之梦了吗？</h2>
+            <p style="font-size: 1.125rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                探索完整的项目设计方案，了解如何用科技点亮千年文化
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="ar-experience.html" class="btn btn-primary">探索 AR 体验</a>
+                <a href="storyboard.html" class="btn btn-secondary">查看故事线</a>
+                <a href="assets.html" class="btn btn-secondary">查看物料延展</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="footer-logo-icon"></div>
+                <span class="footer-title">晴川·映江梦</span>
+            </div>
+            <p class="footer-description">
+                以 AR 科技唤醒千年文化，让晴川阁的诗意在长江之畔重新绽放
+            </p>
+            <div class="footer-links">
+                <a href="index.html">首页</a>
+                <a href="ar-experience.html">AR 体验</a>
+                <a href="visual-style.html">视觉风格</a>
+                <a href="landmarks.html">地标场景</a>
+                <a href="characters.html">角色 IP</a>
+                <a href="storyboard.html">剧情分镜</a>
+                <a href="assets.html">延展物料</a>
+            </div>
+            <p class="footer-copyright">
+                © 2025 晴川·映江梦项目 | 武汉晴川阁文化 AR 体验
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
+

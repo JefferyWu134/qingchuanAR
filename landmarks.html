@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="晴川·映江梦多地标 AR 场景 - 从晴川阁到长江水韵的文化探索">
+    <title>多地标场景 | 晴川·映江梦</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">晴川·映江梦</span>
+            </a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="ar-experience.html">AR 体验</a></li>
+                <li><a href="visual-style.html">视觉风格</a></li>
+                <li><a href="landmarks.html">地标场景</a></li>
+                <li><a href="characters.html">角色 IP</a></li>
+                <li><a href="storyboard.html">剧情分镜</a></li>
+                <li><a href="assets.html">延展物料</a></li>
+            </ul>
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="gradient-text-blue">多地标 AR 场景</h1>
+            <p class="subtitle">从晴川主阁到长江水韵，多维度展现武汉历史文化</p>
+        </div>
+    </section>
+
+    <!-- 场景总览 -->
+    <section class="container" style="padding: 3rem 2rem;">
+        <div class="card scroll-reveal" style="text-align: center; padding: 3rem;">
+            <h2 class="gradient-text" style="margin-bottom: 1.5rem;">立体化文化叙事网络</h2>
+            <p style="font-size: 1.125rem; line-height: 2; color: var(--text-secondary); max-width: 900px; margin: 0 auto;">
+                《晴川·映江梦》不止于单一地标的 AR 展示，而是构建了一个完整的文化场景网络。
+                从晴川阁主建筑到长江江景、从大禹治水神话到历代诗人故事，
+                每个场景都独立成章又相互呼应，为游客呈现一幅立体的武汉文化画卷。
+            </p>
+        </div>
+    </section>
+
+    <!-- 核心场景展示 -->
+    <section class="container" style="padding: 3rem 2rem 5rem;">
+        <div class="grid grid-2" style="gap: 3rem;">
+            <!-- 场景 1：晴川阁主阁 -->
+            <div class="card scroll-reveal" style="padding: 0; overflow: hidden;">
+                <div style="width: 100%; height: 300px; background: linear-gradient(135deg, rgba(26,58,90,0.6), rgba(30,89,72,0.4)); position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <!-- 建筑剪影 -->
+                    <svg width="100%" height="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="pavilionGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:0.6" />
+                                <stop offset="100%" style="stop-color:#8C3B32;stop-opacity:0.4" />
+                            </linearGradient>
+                        </defs>
+                        <!-- 主建筑 -->
+                        <rect x="140" y="150" width="120" height="100" fill="url(#pavilionGrad)" opacity="0.8"/>
+                        <!-- 屋顶 -->
+                        <path d="M 110 150 L 200 90 L 290 150" stroke="#D4AF37" stroke-width="4" fill="none" opacity="0.9"/>
+                        <path d="M 120 130 L 200 75 L 280 130" stroke="#D4AF37" stroke-width="3" fill="none" opacity="0.7"/>
+                        <!-- 诗句光效 -->
+                        <text x="200" y="50" font-size="14" fill="#D4AF37" text-anchor="middle" opacity="0.8" font-family="serif">晴川历历</text>
+                        <circle cx="100" cy="120" r="3" fill="#D4AF37" opacity="0.6">
+                            <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="300" cy="140" r="3" fill="#D4AF37" opacity="0.6">
+                            <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+                        </circle>
+                    </svg>
+                    <div style="position: absolute; top: 20px; left: 20px; padding: 8px 16px; background: rgba(212,175,55,0.9); border-radius: 20px; font-size: 13px; color: #0F1419; font-weight: 600;">
+                        核心场景
+                    </div>
+                </div>
+                <div style="padding: 2rem;">
+                    <h3 class="gradient-text" style="margin-bottom: 1rem;">晴川阁主阁 · 诗词之源</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        项目的核心场景。游客对准晴川阁主建筑时，崔颢的《黄鹤楼》诗句"晴川历历汉阳树，芳草萋萋鹦鹉洲"以金色光效浮现空中，
+                        配合建筑结构的 3D 标注，展现古建筑的营造智慧与诗词背后的文化内涵。
+                    </p>
+                    <div class="tag-cloud">
+                        <span class="tag">诗词叠加</span>
+                        <span class="tag">建筑解析</span>
+                        <span class="tag">历史故事</span>
+                    </div>
+                    <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(212,175,55,0.2);">
+                        <div style="display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.9rem;">
+                            <span>📍 位置：晴川阁正门</span>
+                            <span>⏱️ 体验时长：3-5 分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 场景 2：长江夜景 -->
+            <div class="card scroll-reveal" style="padding: 0; overflow: hidden;">
+                <div style="width: 100%; height: 300px; background: linear-gradient(to bottom, rgba(10,42,74,0.8), rgba(26,58,90,0.6)); position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <!-- 江景 -->
+                    <svg width="100%" height="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 夜空 -->
+                        <rect width="400" height="200" fill="url(#skyGradient)"/>
+                        <circle cx="350" cy="40" r="20" fill="#D4AF37" opacity="0.3"/>
+                        <circle cx="50" cy="60" r="2" fill="#E5E7EB" opacity="0.8"/>
+                        <circle cx="150" cy="40" r="1.5" fill="#E5E7EB" opacity="0.6"/>
+                        <circle cx="280" cy="80" r="2" fill="#E5E7EB" opacity="0.7"/>
+                        <!-- 江面 -->
+                        <path d="M 0 200 Q 100 190 200 200 T 400 200 L 400 300 L 0 300 Z" fill="rgba(26,58,90,0.5)"/>
+                        <path d="M 0 220 Q 100 215 200 220 T 400 220" stroke="rgba(91,155,213,0.4)" stroke-width="2" fill="none"/>
+                        <!-- 倒影光线 -->
+                        <line x1="350" y1="60" x2="350" y2="200" stroke="rgba(212,175,55,0.2)" stroke-width="3"/>
+                        <ellipse cx="350" cy="220" rx="30" ry="15" fill="rgba(212,175,55,0.2)"/>
+                    </svg>
+                    <div style="position: absolute; top: 20px; left: 20px; padding: 8px 16px; background: rgba(91,155,213,0.8); border-radius: 20px; font-size: 13px; color: #E5E7EB; font-weight: 600;">
+                        氛围场景
+                    </div>
+                </div>
+                <div style="padding: 2rem;">
+                    <h3 class="gradient-text-blue" style="margin-bottom: 1rem;">长江夜景 · 映江之光</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        傍晚时分，游客可切换至长江夜景模式。AR 将呈现江面波光粼粼、月光洒在水面的诗意场景，
+                        配合"孤帆远影碧空尽，唯见长江天际流"等与江景相关的诗句，营造浪漫的文化氛围。
+                    </p>
+                    <div class="tag-cloud">
+                        <span class="tag">夜景模式</span>
+                        <span class="tag">水面光影</span>
+                        <span class="tag">江景诗词</span>
+                    </div>
+                    <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(91,155,213,0.2);">
+                        <div style="display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.9rem;">
+                            <span>📍 位置：江边观景台</span>
+                            <span>⏱️ 体验时长：2-4 分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 场景 3：大禹治水 -->
+            <div class="card scroll-reveal" style="padding: 0; overflow: hidden;">
+                <div style="width: 100%; height: 300px; background: linear-gradient(135deg, rgba(30,89,72,0.6), rgba(26,58,90,0.5)); position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <!-- 神话场景 -->
+                    <svg width="100%" height="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 山岩 -->
+                        <path d="M 50 250 L 120 150 L 180 250 Z" fill="rgba(140,59,50,0.4)" stroke="rgba(212,175,55,0.5)" stroke-width="2"/>
+                        <path d="M 220 250 L 280 130 L 350 250 Z" fill="rgba(140,59,50,0.5)" stroke="rgba(212,175,55,0.5)" stroke-width="2"/>
+                        <!-- 水流 -->
+                        <path d="M 0 200 Q 50 190 100 200 T 200 200 T 300 200 T 400 200" stroke="rgba(91,155,213,0.6)" stroke-width="4" fill="none">
+                            <animate attributeName="d" values="M 0 200 Q 50 190 100 200 T 200 200 T 300 200 T 400 200; M 0 200 Q 50 210 100 200 T 200 200 T 300 200 T 400 200; M 0 200 Q 50 190 100 200 T 200 200 T 300 200 T 400 200" dur="3s" repeatCount="indefinite"/>
+                        </path>
+                        <path d="M 0 220 Q 60 215 120 220 T 240 220 T 400 220" stroke="rgba(91,155,213,0.4)" stroke-width="3" fill="none"/>
+                        <!-- 人物剪影 -->
+                        <circle cx="200" cy="180" r="15" fill="rgba(212,175,55,0.7)"/>
+                        <rect x="190" y="195" width="20" height="40" fill="rgba(212,175,55,0.6)"/>
+                        <!-- 光芒 -->
+                        <circle cx="200" cy="180" r="30" fill="none" stroke="rgba(212,175,55,0.3)" stroke-width="2">
+                            <animate attributeName="r" values="30;40;30" dur="2s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" values="0.5;0.2;0.5" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+                    </svg>
+                    <div style="position: absolute; top: 20px; left: 20px; padding: 8px 16px; background: rgba(30,89,72,0.8); border-radius: 20px; font-size: 13px; color: #E5E7EB; font-weight: 600;">
+                        神话场景
+                    </div>
+                </div>
+                <div style="padding: 2rem;">
+                    <h3 class="gradient-text" style="margin-bottom: 1rem;">大禹治水 · 神话重现</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        武汉地处江汉交汇，与大禹治水的传说密切相关。该场景通过 AR 动画再现大禹疏通江河、造福百姓的历史时刻，
+                        配合山川地貌的变化特效，让游客身临其境地感受中华文明的起源故事。
+                    </p>
+                    <div class="tag-cloud">
+                        <span class="tag">神话传说</span>
+                        <span class="tag">动画演绎</span>
+                        <span class="tag">治水文化</span>
+                    </div>
+                    <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(30,89,72,0.2);">
+                        <div style="display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.9rem;">
+                            <span>📍 位置：文化展示区</span>
+                            <span>⏱️ 体验时长：4-6 分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 场景 4：诗人朗诵 -->
+            <div class="card scroll-reveal" style="padding: 0; overflow: hidden;">
+                <div style="width: 100%; height: 300px; background: linear-gradient(135deg, rgba(140,59,50,0.4), rgba(26,58,90,0.5)); position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <!-- 诗人场景 -->
+                    <svg width="100%" height="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 书卷背景 -->
+                        <rect x="80" y="80" width="240" height="140" rx="10" fill="rgba(212,175,55,0.1)" stroke="rgba(212,175,55,0.5)" stroke-width="2"/>
+                        <!-- 卷轴装饰 -->
+                        <circle cx="80" cy="150" r="20" fill="rgba(140,59,50,0.4)" stroke="rgba(212,175,55,0.5)" stroke-width="2"/>
+                        <circle cx="320" cy="150" r="20" fill="rgba(140,59,50,0.4)" stroke="rgba(212,175,55,0.5)" stroke-width="2"/>
+                        <!-- 诗人剪影 -->
+                        <ellipse cx="200" cy="130" rx="25" ry="30" fill="rgba(26,58,90,0.6)"/>
+                        <rect x="180" y="160" width="40" height="50" fill="rgba(26,58,90,0.5)"/>
+                        <!-- 诗句 -->
+                        <text x="200" y="240" font-size="12" fill="#D4AF37" text-anchor="middle" font-family="serif">昔人已乘黄鹤去</text>
+                        <text x="200" y="260" font-size="12" fill="#D4AF37" text-anchor="middle" font-family="serif">此地空余黄鹤楼</text>
+                        <!-- 飘动粒子 -->
+                        <circle cx="250" cy="100" r="2" fill="#D4AF37" opacity="0.6">
+                            <animate attributeName="cy" values="100;80;100" dur="3s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="150" cy="110" r="2" fill="#D4AF37" opacity="0.5">
+                            <animate attributeName="cy" values="110;90;110" dur="3.5s" repeatCount="indefinite"/>
+                        </circle>
+                    </svg>
+                    <div style="position: absolute; top: 20px; left: 20px; padding: 8px 16px; background: rgba(140,59,50,0.7); border-radius: 20px; font-size: 13px; color: #E5E7EB; font-weight: 600;">
+                        文化场景
+                    </div>
+                </div>
+                <div style="padding: 2rem;">
+                    <h3 class="gradient-text" style="margin-bottom: 1rem;">诗人朗诵 · 千古传诵</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        游客可以在 AR 中"遇见"崔颢、李白等历代诗人的虚拟形象，聆听他们亲自朗诵名篇，
+                        了解诗人生平与创作背景。这种沉浸式的文化体验让古诗词不再停留在纸面，而是鲜活地走进当代生活。
+                    </p>
+                    <div class="tag-cloud">
+                        <span class="tag">诗人形象</span>
+                        <span class="tag">语音朗诵</span>
+                        <span class="tag">互动问答</span>
+                    </div>
+                    <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(140,59,50,0.2);">
+                        <div style="display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.9rem;">
+                            <span>📍 位置：诗碑广场</span>
+                            <span>⏱️ 体验时长：5-8 分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 场景 5：江汉交汇 -->
+            <div class="card scroll-reveal" style="padding: 0; overflow: hidden;">
+                <div style="width: 100%; height: 300px; background: linear-gradient(to right, rgba(26,58,90,0.6), rgba(30,89,72,0.6)); position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <!-- 交汇场景 -->
+                    <svg width="100%" height="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 两江 -->
+                        <path d="M 0 100 Q 100 90 200 100 L 400 100" fill="rgba(26,58,90,0.5)"/>
+                        <path d="M 0 200 Q 100 210 200 200 L 400 200" fill="rgba(30,89,72,0.5)"/>
+                        <!-- 交汇区域 -->
+                        <ellipse cx="200" cy="150" rx="80" ry="40" fill="rgba(91,155,213,0.3)"/>
+                        <circle cx="200" cy="150" r="15" fill="rgba(212,175,55,0.5)">
+                            <animate attributeName="r" values="15;25;15" dur="2s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" values="0.5;0.2;0.5" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+                        <!-- 水纹 -->
+                        <path d="M 120 150 Q 140 140 160 150 T 200 150" stroke="rgba(91,155,213,0.4)" stroke-width="2" fill="none"/>
+                        <path d="M 200 150 Q 220 140 240 150 T 280 150" stroke="rgba(91,155,213,0.4)" stroke-width="2" fill="none"/>
+                    </svg>
+                    <div style="position: absolute; top: 20px; left: 20px; padding: 8px 16px; background: rgba(91,155,213,0.8); border-radius: 20px; font-size: 13px; color: #E5E7EB; font-weight: 600;">
+                        地理场景
+                    </div>
+                </div>
+                <div style="padding: 2rem;">
+                    <h3 class="gradient-text-blue" style="margin-bottom: 1rem;">江汉交汇 · 两江奔流</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        武汉独特的地理位置——长江与汉江的交汇点。AR 场景以动态水流展示两江汇合的壮观景象，
+                        结合地理知识讲解与城市发展历史，让游客理解武汉"江城"称号的由来与水文化的深厚底蕴。
+                    </p>
+                    <div class="tag-cloud">
+                        <span class="tag">地理科普</span>
+                        <span class="tag">水文化</span>
+                        <span class="tag">城市历史</span>
+                    </div>
+                    <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(91,155,213,0.2);">
+                        <div style="display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.9rem;">
+                            <span>📍 位置：江汉交汇观景点</span>
+                            <span>⏱️ 体验时长：3-5 分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 场景 6：四季晴川 -->
+            <div class="card scroll-reveal" style="padding: 0; overflow: hidden;">
+                <div style="width: 100%; height: 300px; background: linear-gradient(to right, rgba(212,175,55,0.3), rgba(30,89,72,0.4), rgba(91,155,213,0.3)); position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <!-- 四季变换 -->
+                    <svg width="100%" height="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 春 -->
+                        <g opacity="0.7">
+                            <circle cx="80" cy="100" r="5" fill="#D4AF37"/>
+                            <circle cx="75" cy="110" r="5" fill="#D4AF37"/>
+                            <circle cx="85" cy="110" r="5" fill="#D4AF37"/>
+                        </g>
+                        <!-- 夏 -->
+                        <g opacity="0.7">
+                            <circle cx="160" cy="100" r="8" fill="#1E5948"/>
+                            <circle cx="155" cy="112" r="7" fill="#1E5948"/>
+                            <circle cx="165" cy="112" r="7" fill="#1E5948"/>
+                        </g>
+                        <!-- 秋 -->
+                        <g opacity="0.7">
+                            <circle cx="240" cy="100" r="6" fill="#8C3B32"/>
+                            <circle cx="238" cy="111" r="5" fill="#8C3B32"/>
+                            <circle cx="250" cy="108" r="4" fill="#D4AF37"/>
+                        </g>
+                        <!-- 冬 -->
+                        <g opacity="0.7">
+                            <circle cx="320" cy="105" r="3" fill="#E5E7EB"/>
+                            <circle cx="315" cy="110" r="2" fill="#E5E7EB"/>
+                            <circle cx="325" cy="108" r="2" fill="#E5E7EB"/>
+                        </g>
+                        <!-- 建筑轮廓 -->
+                        <rect x="160" y="200" width="80" height="60" fill="rgba(26,58,90,0.4)" stroke="rgba(212,175,55,0.5)" stroke-width="2"/>
+                        <path d="M 140 200 L 200 160 L 260 200" stroke="rgba(212,175,55,0.6)" stroke-width="3" fill="none"/>
+                    </svg>
+                    <div style="position: absolute; top: 20px; left: 20px; padding: 8px 16px; background: linear-gradient(90deg, rgba(212,175,55,0.8), rgba(91,155,213,0.8)); border-radius: 20px; font-size: 13px; color: #E5E7EB; font-weight: 600;">
+                        时序场景
+                    </div>
+                </div>
+                <div style="padding: 2rem;">
+                    <h3 class="gradient-text" style="margin-bottom: 1rem;">四季晴川 · 岁月流转</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        通过 AR 技术展现晴川阁在春夏秋冬四季的不同景致：春天的花开、夏日的浓荫、秋季的红叶、冬日的雪景。
+                        游客可快速切换季节，对比不同时节的诗词与景观，感受时光流转中不变的文化情怀。
+                    </p>
+                    <div class="tag-cloud">
+                        <span class="tag">四季变换</span>
+                        <span class="tag">季节诗词</span>
+                        <span class="tag">景观对比</span>
+                    </div>
+                    <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(212,175,55,0.2);">
+                        <div style="display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.9rem;">
+                            <span>📍 位置：任意观景点</span>
+                            <span>⏱️ 体验时长：2-3 分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 场景地图 -->
+    <section class="container" style="padding: 5rem 2rem;">
+        <div class="section-title scroll-reveal">
+            <h2 class="gradient-text-blue">场景分布地图</h2>
+            <p>景区内各 AR 场景的空间布局</p>
+        </div>
+        
+        <div class="card scroll-reveal" style="padding: 3rem; background: linear-gradient(135deg, rgba(26,58,90,0.4), rgba(30,89,72,0.3));">
+            <div style="position: relative; width: 100%; max-width: 800px; margin: 0 auto; aspect-ratio: 16/10; background: linear-gradient(to bottom, rgba(10,42,74,0.5), rgba(30,89,72,0.3)); border-radius: 1rem; border: 2px solid rgba(212,175,55,0.3); padding: 2rem;">
+                <!-- 地图点位 -->
+                <div style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">
+                    <div style="width: 40px; height: 40px; background: radial-gradient(circle, rgba(212,175,55,0.8), transparent); border-radius: 50%; display: flex; align-items: center; justify-content: center; animation: breathe 2s ease-in-out infinite;">
+                        <div style="width: 20px; height: 20px; background: #D4AF37; border-radius: 50%; box-shadow: 0 0 20px #D4AF37;"></div>
+                    </div>
+                    <div style="position: absolute; top: 100%; left: 50%; transform: translateX(-50%); margin-top: 10px; padding: 6px 12px; background: rgba(212,175,55,0.9); border-radius: 15px; font-size: 12px; color: #0F1419; white-space: nowrap; font-weight: 600;">
+                        晴川主阁
+                    </div>
+                </div>
+                
+                <div style="position: absolute; top: 40%; left: 25%;">
+                    <div style="width: 35px; height: 35px; background: radial-gradient(circle, rgba(91,155,213,0.8), transparent); border-radius: 50%; display: flex; align-items: center; justify-content: center; animation: breathe 2s ease-in-out infinite; animation-delay: 0.3s;">
+                        <div style="width: 16px; height: 16px; background: #5B9BD5; border-radius: 50%; box-shadow: 0 0 15px #5B9BD5;"></div>
+                    </div>
+                    <div style="position: absolute; top: 100%; left: 50%; transform: translateX(-50%); margin-top: 8px; padding: 5px 10px; background: rgba(91,155,213,0.9); border-radius: 12px; font-size: 11px; color: #E5E7EB; white-space: nowrap; font-weight: 500;">
+                        长江夜景
+                    </div>
+                </div>
+                
+                <div style="position: absolute; top: 55%; right: 30%;">
+                    <div style="width: 35px; height: 35px; background: radial-gradient(circle, rgba(30,89,72,0.8), transparent); border-radius: 50%; display: flex; align-items: center; justify-content: center; animation: breathe 2s ease-in-out infinite; animation-delay: 0.6s;">
+                        <div style="width: 16px; height: 16px; background: #1E5948; border-radius: 50%; box-shadow: 0 0 15px #1E5948;"></div>
+                    </div>
+                    <div style="position: absolute; top: 100%; left: 50%; transform: translateX(-50%); margin-top: 8px; padding: 5px 10px; background: rgba(30,89,72,0.9); border-radius: 12px; font-size: 11px; color: #E5E7EB; white-space: nowrap; font-weight: 500;">
+                        大禹治水
+                    </div>
+                </div>
+                
+                <div style="position: absolute; bottom: 30%; left: 40%;">
+                    <div style="width: 32px; height: 32px; background: radial-gradient(circle, rgba(140,59,50,0.8), transparent); border-radius: 50%; display: flex; align-items: center; justify-content: center; animation: breathe 2s ease-in-out infinite; animation-delay: 0.9s;">
+                        <div style="width: 14px; height: 14px; background: #8C3B32; border-radius: 50%; box-shadow: 0 0 15px #8C3B32;"></div>
+                    </div>
+                    <div style="position: absolute; top: 100%; left: 50%; transform: translateX(-50%); margin-top: 8px; padding: 5px 10px; background: rgba(140,59,50,0.9); border-radius: 12px; font-size: 11px; color: #E5E7EB; white-space: nowrap; font-weight: 500;">
+                        诗人朗诵
+                    </div>
+                </div>
+                
+                <!-- 提示文字 -->
+                <div style="position: absolute; bottom: 10px; right: 15px; font-size: 12px; color: var(--text-muted);">
+                    💡 点击发光点可查看场景详情
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 场景切换机制 -->
+    <section class="container" style="padding: 5rem 2rem;">
+        <div class="section-title scroll-reveal">
+            <h2 class="gradient-text-blue">智能场景切换</h2>
+            <p>根据位置、时间、用户偏好智能推荐最佳体验</p>
+        </div>
+        
+        <div class="grid grid-3">
+            <div class="card scroll-reveal text-center">
+                <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #1A3A5A, #2A4A6A); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; box-shadow: 0 10px 30px rgba(26,58,90,0.4);">
+                    📍
+                </div>
+                <h3 style="color: var(--gold); margin-bottom: 1rem;">GPS 定位切换</h3>
+                <p style="color: var(--text-secondary); line-height: 1.8;">
+                    系统自动识别游客所在位置，推荐附近可体验的 AR 场景，无需手动查找。
+                </p>
+            </div>
+            
+            <div class="card scroll-reveal text-center">
+                <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #1E5948, #2E6958); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; box-shadow: 0 10px 30px rgba(30,89,72,0.4);">
+                    ⏰
+                </div>
+                <h3 style="color: var(--gold); margin-bottom: 1rem;">时间感知推荐</h3>
+                <p style="color: var(--text-secondary); line-height: 1.8;">
+                    根据当前时间（白天/夜晚、季节）智能推荐最适合的场景体验模式。
+                </p>
+            </div>
+            
+            <div class="card scroll-reveal text-center">
+                <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #8C3B32, #9C4B42); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; box-shadow: 0 10px 30px rgba(140,59,50,0.4);">
+                    ❤️
+                </div>
+                <h3 style="color: var(--gold); margin-bottom: 1rem;">偏好学习推荐</h3>
+                <p style="color: var(--text-secondary); line-height: 1.8;">
+                    记录游客的体验偏好，推荐符合个人兴趣的场景与内容路线。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="footer-logo-icon"></div>
+                <span class="footer-title">晴川·映江梦</span>
+            </div>
+            <p class="footer-description">
+                以 AR 科技唤醒千年文化，让晴川阁的诗意在长江之畔重新绽放
+            </p>
+            <div class="footer-links">
+                <a href="index.html">首页</a>
+                <a href="ar-experience.html">AR 体验</a>
+                <a href="visual-style.html">视觉风格</a>
+                <a href="landmarks.html">地标场景</a>
+                <a href="characters.html">角色 IP</a>
+                <a href="storyboard.html">剧情分镜</a>
+                <a href="assets.html">延展物料</a>
+            </div>
+            <p class="footer-copyright">
+                © 2025 晴川·映江梦项目 | 武汉晴川阁文化 AR 体验
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    
+    <style>
+        @keyframes breathe {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.7; }
+        }
+    </style>
+</body>
+</html>
+
